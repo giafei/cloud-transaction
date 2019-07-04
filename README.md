@@ -24,9 +24,13 @@ net:
       max-wait-time: 10000 #单位毫秒，这个值在所有的微服务必须一致
 ```
 
-3. 保证Redis可用
+3. 增加包扫描
+```java
+@SpringBootApplication(scanBasePackages = "net.giafei")
+```
 
-4. 按单点应用的方式在业务层用`@Transactional`注解使用Spring的事务即
+4. 保证Redis可用
+5. 按单点应用的方式在业务层用`@Transactional`注解使用Spring的事务即
 
 ### demo运行
 1. 修改各项目中的数据库与Redis的配置项
