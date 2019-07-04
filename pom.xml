@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.giafei.tools</groupId>
+    <artifactId>cloud-transaction</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>component/cloud-transaction-base</module>
+        <module>component/cloud-transaction-2pc-starter</module>
+        <module>demo/common/cloud-service-utils</module>
+        <module>demo/common/service-api-base</module>
+        <module>demo/common/service-base</module>
+        <module>demo/order/order-service</module>
+        <module>demo/eureka/eureka-server</module>
+        <module>component/cloud-transaction-2pc-starter</module>
+        <module>demo/storage/storage-client-api</module>
+        <module>demo/storage/storage-service</module>
+        <module>demo/order/order-client-api</module>
+    </modules>
+
+</project>

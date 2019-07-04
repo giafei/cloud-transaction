@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/pay_order?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+  application:
+    name: order-server
+  redis:
+    jedis:
+      pool:
+        max-wait: 5000
+    timeout: 500
+    sentinel:
+      master: redis-master
+      nodes: 127.0.0.1:6391
+
+server:
+  port: 5501
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:5401/eureka/
+
+net:
+  giafei:
+    transaction:
+      max-wait-time: 10000
+
+logging:
+  level:
+    ROOT: info
+    net.giafei: debug
